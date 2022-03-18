@@ -1,5 +1,5 @@
 /**
- * LeetCode Problem: 643.  Maximum Average SubArray
+ * LeetCode Problem: Maximum Average SubArray
  */
 public class MaxAvgSubArray {
     public static void main(String[] args) {
