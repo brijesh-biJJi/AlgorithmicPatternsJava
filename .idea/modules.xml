@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AlgorithmicPatternsJava.iml" filepath="$PROJECT_DIR$/.idea/AlgorithmicPatternsJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/sliding_window1/sliding_window1.iml" filepath="$PROJECT_DIR$/sliding_window1/sliding_window1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sliding_window2/sliding_window2.iml" filepath="$PROJECT_DIR$/sliding_window2/sliding_window2.iml" />
     </modules>
   </component>
 </project>
