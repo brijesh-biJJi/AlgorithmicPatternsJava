@@ -13,20 +13,29 @@ public class MinimumSizeSubArraySum {
     }
 
     private static int findMinimumSizeSubArraySum(int[] nums, int target) {
-        int start = 0,sum = 0, min = Integer.MAX_VALUE;
+        int start = 0,sum = 0;
+//        int min = Integer.MAX_VALUE;
+        int minLen = 0;
 
         for (int end = 0; end < nums.length ; end++ ) {
             sum += nums[end];
 
             while( sum >= target){
-                min = Math.min(min, end - start + 1);
+                if(minLen == 0)
+                    minLen = end - start + 1;
+
+//                min = Math.min(min, end - start + 1);
+                minLen = Math.min(minLen, end - start + 1);
                 sum -= nums[start];
                 start++;
             }
         }
 
-        if(min == Integer.MAX_VALUE)
+//        if(min == Integer.MAX_VALUE)
+//            return 0;
+//        return min;
+        if(minLen == 0)
             return 0;
-        return min;
+        return minLen;
     }
 }
