@@ -21,6 +21,9 @@ public class MinimumSizeSubArraySum {
             sum += nums[end];
 
             while( sum >= target){
+                /* This condition is checked only at the beginning
+                   Becoz by default min = 0, and 0 is minimum positive number
+                   So whenever we check any positive number with 0 it will always be minimum*/
                 if(minLen == 0)
                     minLen = end - start + 1;
 
